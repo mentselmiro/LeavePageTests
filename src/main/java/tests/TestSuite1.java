@@ -4,9 +4,7 @@ import constants.NotificationTexts;
 import constants.TeamLeavesText;
 import elements.LeavesTable;
 import enums.LeaveTableColumn;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import pages.AddLeaveModal;
 import pages.EditLeaveModal;
 import pages.PersonalLeavesPage;
@@ -20,7 +18,6 @@ public class TestSuite1 extends BaseTest {
 
     @Test
     @Order(1)
-
     public void checkElementsOnScreen(){
     PersonalLeavesPage personalLeavesPage = new PersonalLeavesPage();
         LeavesTable spreadsheet = new LeavesTable();
@@ -57,7 +54,6 @@ public class TestSuite1 extends BaseTest {
         addLeaveModal.clickCancelButton();
     }
 
-
     @Test
     @Order(3)
     public void addNewDraftLeave() throws InterruptedException {
@@ -85,11 +81,10 @@ public class TestSuite1 extends BaseTest {
     }
     @Test
     @Order(4)
-    public void checkElementsOnEditDateModal() throws InterruptedException {
-        Thread.sleep(500);
+    public void checkAllElementsOnEditDateModal() throws InterruptedException {
+        Thread.sleep(1000);
         PersonalLeavesPage personalLeavesPage = new PersonalLeavesPage();
         personalLeavesPage.clickEditButton();
-        Thread.sleep(500);
         EditLeaveModal editLeaveModal = new EditLeaveModal();
         editLeaveModal.verifyCorrectModal();
         assertTrue(editLeaveModal.isSaveButtonVisible());

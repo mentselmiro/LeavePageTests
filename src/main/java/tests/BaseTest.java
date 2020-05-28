@@ -8,6 +8,9 @@ import pages.DeleteLeaveModal;
 import pages.LoginPage;
 import pages.PersonalLeavesPage;
 
+import java.net.URL;
+import java.sql.Driver;
+
 import static config.ApplicationConfig.getDriver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -17,6 +20,7 @@ public class BaseTest {
     @BeforeAll
     public static void beforeClass() {
         ApplicationConfig.invokeBrowser();
+
 
         try {
             login();

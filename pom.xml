@@ -37,26 +37,40 @@
             <artifactId>selenium-server</artifactId>
             <version>3.141.59</version>
         </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter-api</artifactId>-->
+<!--            <version>5.6.2</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.6.2</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.6.2</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.7.0-M1</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
+
+<!--        <test name="" preserve-order="true">-->
+<!--            <classes>-->
+<!--                <class name="tests.TestSuite1">-->
+<!--                    <methods>-->
+<!--                        <include name="checkElementsOnScreen"/>-->
+<!--                        <include name="checkElementsOnAddDateModal"/>-->
+<!--                        <include name="addNewDraftLeave"/>-->
+<!--                        <include name="checkElementsOnEditDateModal"/>-->
+<!--                    </methods>-->
+
+<!--                </class>-->
+<!--            </classes>-->
+<!--        </test>-->
 </project>
